@@ -1,0 +1,26 @@
+[
+  {
+    "id": "XGTE1",
+    "description": "Has a rival; wants them to suffer."
+  },
+  {
+    "id": "XGTE2",
+    "description": "Is abused by others; hangs back, betrays at first opportunity."
+  },
+  {
+    "id": "XGTE3",
+    "description": "Is worshiped; allies will die for them."
+  },
+  {
+    "id": "XGTE4",
+    "description": "Is outcast by group, their allies will ignore them."
+  },
+  {
+    "id": "XGTE5",
+    "description": "Is outcast by choice, cares only for themselves."
+  },
+  {
+    "id": "XGTE6",
+    "description": "Is seen as a bully, their allies want to see them defeated."
+  }
+]

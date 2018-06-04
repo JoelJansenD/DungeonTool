@@ -1,0 +1,42 @@
+[
+  {
+    "id": "MM1",
+    "name": "Goblin",
+    "cr": "1/8",
+    "species": "humanoid",
+    "subspecies": "goblinoid",
+    "personalities": [
+      "XGTE1",
+      "XGTE2",
+      "XGTE3",
+      "XGTE4",
+      "XGTE5",
+      "XGTE6",
+      "XGTE7",
+      "XGTE8"
+    ],
+    "monsters": [
+      "MM1",
+      "MM2"
+    ],
+    "relationships": [
+      "XGTE1",
+      "XGTE2",
+      "XGTE3",
+      "XGTE4",
+      "XGTE5",
+      "XGTE6"
+    ]
+  },
+  {
+    "id": "MM2",
+    "name": "Giant Spider",
+    "cr": "1/4",
+    "species": "beast",
+    "subspecies": "none",
+    "monsters": [
+      "MM1",
+      "MM2"
+    ]
+  }
+]

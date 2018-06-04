@@ -1,0 +1,42 @@
+[
+  {
+    "id": "XGTE1",
+    "name": "Cowardly",
+    "description": "Looking to surrender"
+  },
+  {
+    "id": "XGTE2",
+    "name": "Greedy",
+    "description": "Wants treasure"
+  },
+  {
+    "id": "XGTE3",
+    "name": "Braggart",
+    "description": "Makes a show of bravery, but runs from danger."
+  },
+  {
+    "id": "XGTE4",
+    "name": "Fanatic",
+    "description": "Ready to die fighting."
+  },
+  {
+    "id": "XGTE5",
+    "name": "Rabble",
+    "description": "Poorly trained and easily rattles."
+  },
+  {
+    "id": "XGTE6",
+    "name": "Brave",
+    "description": "Stands their ground."
+  },
+  {
+    "id": "XGTE7",
+    "name": "Joker",
+    "description": "Taunts their enemies."
+  },
+  {
+    "id": "XGTE8",
+    "name": "Bully",
+    "description": "Refuses to believe it can lose."
+  }
+]

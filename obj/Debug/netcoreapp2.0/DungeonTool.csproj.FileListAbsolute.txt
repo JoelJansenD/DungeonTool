@@ -1,0 +1,11 @@
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.deps.json
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.runtimeconfig.json
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.runtimeconfig.dev.json
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.dll
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.csprojResolveAssemblyReference.cache
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.csproj.CoreCompileInputs.cache
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.AssemblyInfoInputs.cache
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.AssemblyInfo.cs
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.pdb
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.dll
+C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.pdb
