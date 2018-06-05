@@ -1,4 +1,4 @@
-﻿using DungeonTool.Characters;
+﻿using DungeonTool.Monsters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +14,11 @@ namespace DungeonTool.Encounters
             Monsters = new List<Monster>();
         }
 
+        /// <summary>
+        /// Generates a random encounter
+        /// </summary>
+        /// <param name="difficulty">The desired encounter difficulty</param>
+        /// <returns>A created encounter or null if no encounter could be created</returns>
         public static Encounter CreateEncounter(EncounterDifficulty difficulty)
         {
             double experience = StoredData.PlayerExperience[StoredData.PlayerLevel - 1, (int)difficulty] * StoredData.PlayerCount;
@@ -34,6 +39,11 @@ namespace DungeonTool.Encounters
 
             while (encounter.GetEffectiveExperience() < experience)
             {
+                if(encounter.Monsters.Count > 20)
+                {
+                    return null;
+                }
+
                 Monster newMonster = firstMonster.GetRandomAppropriateMonster();
                 newMonster.SetRandomPersonality();
                 newMonster.SetRandomRelationShip();
@@ -48,6 +58,10 @@ namespace DungeonTool.Encounters
             return encounter;
         }
 
+        /// <summary>
+        /// Calculates the amount of effective experience for this encounter, which is used to calculate the difficulty
+        /// </summary>
+        /// <returns>The effective experience for the encounter</returns>
         public double GetEffectiveExperience()
         {
             int sum = GetExperience();
@@ -76,6 +90,10 @@ namespace DungeonTool.Encounters
             return sum * 4;
         }
 
+        /// <summary>
+        /// Calculates the amount of experience the encounter is worth
+        /// </summary>
+        /// <returns>The amount of experience the players get for completing the encounter</returns>
         public int GetExperience()
         {
             return Monsters.Sum(monster => monster.GetExperience());

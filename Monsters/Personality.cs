@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonTool.Characters
+namespace DungeonTool.Monsters
 {
     public class Personality
     {

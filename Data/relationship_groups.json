@@ -1,0 +1,13 @@
+[
+  {
+    "type": "intelligent",
+    "relationships": [
+      "XGTE1",
+      "XGTE2",
+      "XGTE3",
+      "XGTE4",
+      "XGTE5",
+      "XGTE6"
+    ]
+  }
+]

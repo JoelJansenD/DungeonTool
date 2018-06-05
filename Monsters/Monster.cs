@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonTool.Characters
+namespace DungeonTool.Monsters
 {
     public class Monster
     {
@@ -42,6 +42,10 @@ namespace DungeonTool.Characters
             Relationships = new List<Relationship>();
         }
 
+        /// <summary>
+        /// Returns the amount of experience a monster gives upon being defeated based on their challnge rating
+        /// </summary>
+        /// <returns>The amount of experience the monster is worth</returns>
         public int GetExperience()
         {
             switch (CR)
@@ -57,16 +61,27 @@ namespace DungeonTool.Characters
             }
         }
 
+        /// <summary>
+        /// Returns a random monster appropriate to appear alongside this monster
+        /// </summary>
+        /// <returns>A random monster</returns>
         public Monster GetRandomAppropriateMonster()
         {
             return Monsters[Utility.Random.Next(Monsters.Count)];
         }
 
+        /// <summary>
+        /// Returns a random monster
+        /// </summary>
+        /// <returns>A random monster</returns>
         public static Monster GetRandomMonster()
         {
             return StoredData.Monsters[Utility.Random.Next(StoredData.Monsters.Count)];
         }
 
+        /// <summary>
+        /// Sets a random personality for the monster, provided that it has personalities available
+        /// </summary>
         public void SetRandomPersonality()
         {
             if(Personalities.Count > 0)
@@ -75,6 +90,9 @@ namespace DungeonTool.Characters
             }
         }
 
+        /// <summary>
+        /// Sets a random relation for the monster, provided that it has relationships available
+        /// </summary>
         public void SetRandomRelationShip()
         {
             if(Relationships.Count > 0)

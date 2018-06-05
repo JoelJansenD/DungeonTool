@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonTool.Characters
+namespace DungeonTool.Monsters.Modifiers
 {
-    public class Relationship
+    public class Ability
     {
-        public string ID;
         public string Description;
+        public string Name;
     }
 }

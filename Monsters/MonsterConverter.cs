@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DungeonTool.Characters
+namespace DungeonTool.Monsters
 {
     public class MonsterConverter : Converter<Monster>
     {
@@ -58,24 +58,26 @@ namespace DungeonTool.Characters
             }
 
             // Monster personalities
-            if (FieldExists("personalities", jObject))
+            if (FieldExists("personalitygroup", jObject))
             {
-                JArray personalityArray = jObject.GetValue("personalities").Value<JArray>();
+                string groupName = jObject.GetValue("personalitygroup").Value<string>();
+                List<PersonalityGroup> groups = StoredData.PersonalityGroups.Where(personality => personality.Type == groupName).ToList();
 
-                foreach (JToken personalityToken in personalityArray.Children())
+                if(groups.Count > 0)
                 {
-                    monster.Personalities.Add(StoredData.Personalities.Find(personality => personality.ID == personalityToken.ToString()));
+                    monster.Personalities = groups.First().Personalities;
                 }
             }
 
             // Monster relationships
-            if(FieldExists("relationships", jObject))
+            if(FieldExists("relationshipgroup", jObject))
             {
-                JArray relationshipArray = jObject.GetValue("relationships").Value<JArray>();
+                string groupName = jObject.GetValue("relationshipgroup").Value<string>();
+                List<RelationshipGroup> groups = StoredData.RelationshipGroups.Where(relationship => relationship.Type == groupName).ToList();
 
-                foreach(JToken relationshipToken in relationshipArray.Children())
+                if(groups.Count > 0)
                 {
-                    monster.Relationships.Add(StoredData.Relationships.Find(relationship => relationship.ID == relationshipToken.ToString()));
+                    monster.Relationships = groups.First().Relationships;
                 }
             }
 

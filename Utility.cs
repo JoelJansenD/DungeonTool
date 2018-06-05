@@ -23,6 +23,13 @@ namespace DungeonTool
             }
         }
 
+        /// <summary>
+        /// Replace the first occurance of a string inside another
+        /// </summary>
+        /// <param name="input">The string to be altered</param>
+        /// <param name="search">The string that test against the main string</param>
+        /// <param name="replace">The string to replace the first occurance by</param>
+        /// <returns></returns>
         public static string ReplaceFirstString(string input, string search, string replace)
         {
             int position = input.IndexOf(search);
@@ -34,6 +41,11 @@ namespace DungeonTool
             return input.Substring(0, position) + replace + input.Substring(position + search.Length);
         }
 
+        /// <summary>
+        /// Rolls dice along the XdY format
+        /// </summary>
+        /// <param name="input">A string following the XdY format</param>
+        /// <returns></returns>
         public static int RollDice(string input)
         {
             string[] rollParams = input.Split('d');

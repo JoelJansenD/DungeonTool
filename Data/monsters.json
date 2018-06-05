@@ -5,27 +5,11 @@
     "cr": "1/8",
     "species": "humanoid",
     "subspecies": "goblinoid",
-    "personalities": [
-      "XGTE1",
-      "XGTE2",
-      "XGTE3",
-      "XGTE4",
-      "XGTE5",
-      "XGTE6",
-      "XGTE7",
-      "XGTE8"
-    ],
+    "personalitygroup": "intelligent",
+    "relationshipgroup": "intelligent",
     "monsters": [
       "MM1",
       "MM2"
-    ],
-    "relationships": [
-      "XGTE1",
-      "XGTE2",
-      "XGTE3",
-      "XGTE4",
-      "XGTE5",
-      "XGTE6"
     ]
   },
   {

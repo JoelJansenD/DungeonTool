@@ -1,0 +1,44 @@
+[
+  {
+    "id": "MTOF1",
+    "devil": "Asmodeus",
+    "goals": "Unknown",
+    "cultists": "All who gain power and leadership in the cults of the Nine",
+    "abilities": [
+      {
+        "name": "Demands of Nessus",
+        "description": "At the start of each of this creature's turns, this creature can choose one ally it can see within 30 feet of it. The chosen ally loses 10 hit points, and this creature regains the same number of hit points. If the creature is incapacitated, it makes no choice; instead, the closest ally within 30 feet is the chosen ally."
+      }
+    ]
+  },
+  {
+    "id": "MTOF2",
+    "devil": "Baalzebul",
+    "goals": "Restoration of honor and respect, at the cost of those who stole it",
+    "cultists": "Any NPC or monster that has suffered a fall from grace",
+    "spells": [
+      {
+        "name": "Minor illusion",
+        "level": 0
+      },
+      {
+        "name": "Disguise self",
+        "level": 1
+      },
+      {
+        "name": "Phantasmal force",
+        "level": 2
+      },
+      {
+        "name": "Major image",
+        "level": 3
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Path of Baalzebul",
+        "description": "As a bonus action on its turn, this creature can choose one ally it can see within 30 feet of it. Until the start of this creature's next turn, it gains advantage on all ability checks and attack roll, while the chosen ally suffers disadvantage on all ability checks, attack rolls, and saving throws."
+      }
+    ]
+  }
+]

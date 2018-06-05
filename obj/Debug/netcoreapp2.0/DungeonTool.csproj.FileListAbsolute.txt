@@ -9,3 +9,16 @@ C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2
 C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.pdb
 C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.dll
 C:\Users\jjans\Desktop\Projects\C#\DungeonTool\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.pdb
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.csprojAssemblyReference.cache
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.csproj.CoreCompileInputs.cache
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.AssemblyInfoInputs.cache
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.AssemblyInfo.cs
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.dll
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.pdb
+C:\Users\joel\Desktop\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.deps.json
+C:\Users\joel\Desktop\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.runtimeconfig.json
+C:\Users\joel\Desktop\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.runtimeconfig.dev.json
+C:\Users\joel\Desktop\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.dll
+C:\Users\joel\Desktop\DungeonTool\bin\Debug\netcoreapp2.0\DungeonTool.pdb
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.Properties.Resources.resources
+C:\Users\joel\Desktop\DungeonTool\obj\Debug\netcoreapp2.0\DungeonTool.csproj.GenerateResource.cache
