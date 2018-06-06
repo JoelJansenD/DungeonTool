@@ -35,7 +35,14 @@ namespace DungeonTool.Encounters
             {
                 firstMonster = Monster.GetRandomMonster();
             }
+
+            if (firstMonster.InfernalCults.Count > 0 && Utility.Random.Next(100) > 94)
+            {
+                firstMonster.SetRandomInfernalCult();
+            }
+
             encounter.Monsters.Add(firstMonster);
+            Console.WriteLine(firstMonster.ToString());
 
             while (encounter.GetEffectiveExperience() < experience)
             {
@@ -47,6 +54,13 @@ namespace DungeonTool.Encounters
                 Monster newMonster = firstMonster.GetRandomAppropriateMonster();
                 newMonster.SetRandomPersonality();
                 newMonster.SetRandomRelationShip();
+
+                // Every monster has a 5% chance of being an honoured cultists
+                if (Utility.Random.Next(100) > 94 && newMonster.InfernalCults.Count > 0)
+                {
+                    newMonster.SetRandomInfernalCult();
+                }
+
                 encounter.Monsters.Add(newMonster);
                 Console.WriteLine(newMonster.ToString());
             }

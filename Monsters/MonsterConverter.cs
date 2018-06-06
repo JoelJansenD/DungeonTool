@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using DungeonTool.Monsters.Modifiers;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,18 @@ namespace DungeonTool.Monsters
             else
             {
                 monster.CR = "0";
+            }
+
+            // Monster cults
+            if (FieldExists("cultgroup", jObject))
+            {
+                string groupName = jObject.GetValue("cultgroup").Value<string>();
+                List<InfernalCultGroup> groups = StoredData.InfernalCultGroups.Where(cult => cult.Type == groupName).ToList();
+
+                if (groups.Count > 0)
+                {
+                    monster.InfernalCults = groups.First().InfernalCults;
+                }
             }
 
             // Monster ID

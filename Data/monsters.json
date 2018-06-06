@@ -7,6 +7,7 @@
     "subspecies": "goblinoid",
     "personalitygroup": "intelligent",
     "relationshipgroup": "intelligent",
+    "cultgroup": "humanoid",
     "monsters": [
       "MM1",
       "MM2"

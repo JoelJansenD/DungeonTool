@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DungeonTool.Monsters.Modifiers;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,6 +12,7 @@ namespace DungeonTool.Monsters
         public Species Species;
         public Subspecies Subspecies;
 
+        public List<InfernalCult> InfernalCults;
         public List<Monster> Monsters {
             get
             {
@@ -27,6 +29,7 @@ namespace DungeonTool.Monsters
         }
         public List<Personality> Personalities;
         public List<Relationship> Relationships;
+        public InfernalCult InfernalCult;
         public Personality Personality;
         public Relationship Relationship;
 
@@ -37,6 +40,7 @@ namespace DungeonTool.Monsters
 
         public Monster()
         {
+            InfernalCults = new List<InfernalCult>();
             MonsterIDs = new List<string>();
             Personalities = new List<Personality>();
             Relationships = new List<Relationship>();
@@ -77,6 +81,14 @@ namespace DungeonTool.Monsters
         public static Monster GetRandomMonster()
         {
             return StoredData.Monsters[Utility.Random.Next(StoredData.Monsters.Count)];
+        }
+
+        public void SetRandomInfernalCult()
+        {
+            if(InfernalCults.Count > 0)
+            {
+                InfernalCult = InfernalCults[Utility.Random.Next(InfernalCults.Count)];
+            }
         }
 
         /// <summary>
@@ -120,6 +132,11 @@ namespace DungeonTool.Monsters
             if(Relationship != null)
             {
                 result += $" - {Relationship.Description}";
+            }
+
+            if(InfernalCult != null)
+            {
+                result += $" - {InfernalCult.Name}";
             }
 
             return result;

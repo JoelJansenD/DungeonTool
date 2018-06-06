@@ -9,20 +9,33 @@ namespace DungeonTool
     public class StoredData
     {
         private static List<InfernalCult> _infernalCults;
+        private static List<InfernalCultGroup> _infernalCultGroups;
         private static List<Monster> _monsters;
         private static List<Personality> _personalities;
         private static List<PersonalityGroup> _personalityGroups;
         private static List<Relationship> _relationships;
         private static List<RelationshipGroup> _relationshipGroups;
 
-        public static List<InfernalCult> InfernalCults {
+        public static List<InfernalCult> InfernalCults
+        {
             get
             {
-                if(_infernalCults == null)
+                if (_infernalCults == null)
                 {
                     _infernalCults = new List<InfernalCult>();
                 }
                 return _infernalCults;
+            }
+        }
+        public static List<InfernalCultGroup> InfernalCultGroups
+        {
+            get
+            {
+                if (_infernalCultGroups == null)
+                {
+                    _infernalCultGroups = new List<InfernalCultGroup>();
+                }
+                return _infernalCultGroups;
             }
         }
         public static List<Monster> Monsters
