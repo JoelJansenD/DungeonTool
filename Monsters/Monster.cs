@@ -7,8 +7,6 @@ namespace DungeonTool.Monsters
 {
     public class Monster
     {
-        private List<Monster> _monsters;
-
         public Species Species;
         public Subspecies Subspecies;
 
@@ -16,19 +14,22 @@ namespace DungeonTool.Monsters
         public List<Monster> Monsters {
             get
             {
-                if(_monsters == null)
-                {
-                    _monsters = new List<Monster>();
-                    foreach(string id in MonsterIDs)
-                    {
-                        _monsters.Add(StoredData.Monsters.Find(monster => monster.ID == id));
-                    }
-                }
-                return _monsters;
+                return StoredData.Monsters.FindAll(monster => MonsterIDs.Contains(monster.ID)); ;
+
+                //if(_monsters == null)
+                //{
+                //    _monsters = new List<Monster>();
+                //    foreach(string id in MonsterIDs)
+                //    {
+                //        _monsters.Add(StoredData.Monsters.Find(monster => monster.ID == id));
+                //    }
+                //}
+                //return _monsters;
             }
         }
         public List<Personality> Personalities;
         public List<Relationship> Relationships;
+
         public InfernalCult InfernalCult;
         public Personality Personality;
         public Relationship Relationship;
@@ -71,7 +72,21 @@ namespace DungeonTool.Monsters
         /// <returns>A random monster</returns>
         public Monster GetRandomAppropriateMonster()
         {
-            return Monsters[Utility.Random.Next(Monsters.Count)];
+            Monster monster = Monsters[Utility.Random.Next(Monsters.Count)];
+            monster = new Monster //TODO: Proper solution
+            {
+                CR = monster.CR,
+                ID = monster.ID,
+                InfernalCults = monster.InfernalCults,
+                MonsterIDs = monster.MonsterIDs,
+                Name = monster.Name,
+                Personalities = monster.Personalities,
+                Relationships = monster.Relationships,
+                Species = monster.Species,
+                Subspecies = monster.Subspecies
+            };
+
+            return monster;
         }
 
         /// <summary>
@@ -81,14 +96,6 @@ namespace DungeonTool.Monsters
         public static Monster GetRandomMonster()
         {
             return StoredData.Monsters[Utility.Random.Next(StoredData.Monsters.Count)];
-        }
-
-        public void SetRandomInfernalCult()
-        {
-            if(InfernalCults.Count > 0)
-            {
-                InfernalCult = InfernalCults[Utility.Random.Next(InfernalCults.Count)];
-            }
         }
 
         /// <summary>
@@ -126,17 +133,17 @@ namespace DungeonTool.Monsters
 
             if(Personality != null)
             {
-                result += $" - {Personality.ToString()}";
+                result += $"\nPersonality: {Personality.ToString()}";
             }
 
             if(Relationship != null)
             {
-                result += $" - {Relationship.Description}";
+                result += $"\nRelationship: {Relationship.Description}";
             }
 
             if(InfernalCult != null)
             {
-                result += $" - {InfernalCult.Name}";
+                result += $"\nCult: {InfernalCult.Name}";
             }
 
             return result;

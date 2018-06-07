@@ -87,6 +87,7 @@ namespace DungeonTool
             #endregion
 
             Encounter encounter = Encounter.CreateEncounter(EncounterDifficulty.Deadly);
+            Console.WriteLine(encounter.ToString());
         }
     }
 }

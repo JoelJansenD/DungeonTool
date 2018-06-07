@@ -48,6 +48,9 @@ namespace DungeonTool
                 }
                 return _monsters;
             }
+            private set {
+                _monsters = value;
+            }
         }
         public static List<Personality> Personalities
         {
