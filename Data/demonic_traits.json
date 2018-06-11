@@ -1,0 +1,22 @@
+﻿{
+  "traits": [
+    "trait1",
+    "trait2"
+  ],
+  "ideals": [
+    "ideal1",
+    "ideal2"
+  ],
+  "bonds": [
+    "bond1",
+    "bond2"
+  ],
+  "flaws": [
+    "flaw1",
+    "flaw2"
+  ],
+  "features": [
+    "feature1",
+    "feature2"
+  ]
+}

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonTool
+namespace DungeonLib
 {
     public class StoredData
     {

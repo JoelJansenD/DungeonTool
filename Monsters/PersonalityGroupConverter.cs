@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DungeonLib;
 using Newtonsoft.Json.Linq;
 
 namespace DungeonTool.Monsters
 {
-    class PersonalityGroupConverter : Converter<PersonalityGroup>
+    public class PersonalityGroupConverter : Converter<PersonalityGroup>
     {
         protected override PersonalityGroup Create(Type objectType, JObject jObject)
         {

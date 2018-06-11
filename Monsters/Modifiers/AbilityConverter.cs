@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace DungeonTool.Monsters.Modifiers
 {
-    class AbilityConverter : Converter<Ability>
+    public class AbilityConverter : Converter<Ability>
     {
         protected override Ability Create(Type objectType, JObject jObject)
         {

@@ -1,4 +1,5 @@
-﻿using DungeonTool.Monsters.Modifiers;
+﻿using DungeonLib;
+using DungeonTool.Monsters.Modifiers;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;

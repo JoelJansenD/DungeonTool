@@ -1,12 +1,12 @@
-﻿using DungeonTool.Monsters;
-using DungeonTool.Encounters;
+﻿using DungeonTool.Encounters;
+using DungeonTool.Monsters;
+using DungeonTool.Monsters.Modifiers;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
-using DungeonTool.Monsters.Modifiers;
 
-namespace DungeonTool
+namespace DungeonLib
 {
     class Program
     {

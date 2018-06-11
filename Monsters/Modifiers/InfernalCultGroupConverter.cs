@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DungeonLib;
 using Newtonsoft.Json.Linq;
 
 namespace DungeonTool.Monsters.Modifiers
 {
-    class InfernalCultGroupConverter : Converter<InfernalCultGroup>
+    public class InfernalCultGroupConverter : Converter<InfernalCultGroup>
     {
         protected override InfernalCultGroup Create(Type objectType, JObject jObject)
         {

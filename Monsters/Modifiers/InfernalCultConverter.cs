@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace DungeonTool.Monsters.Modifiers
 {
-    class InfernalCultConverter : Converter<InfernalCult>
+    public class InfernalCultConverter : Converter<InfernalCult>
     {
         protected override InfernalCult Create(Type objectType, JObject jObject)
         {

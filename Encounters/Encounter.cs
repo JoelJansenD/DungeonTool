@@ -1,4 +1,6 @@
-﻿using DungeonTool.Monsters;
+﻿using DungeonLib;
+using DungeonTool;
+using DungeonTool.Monsters;
 using DungeonTool.Monsters.Modifiers;
 using System;
 using System.Collections.Generic;

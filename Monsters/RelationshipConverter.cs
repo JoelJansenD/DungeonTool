@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace DungeonTool.Monsters
 {
-    class RelationshipConverter : Converter<Relationship>
+    public class RelationshipConverter : Converter<Relationship>
     {
         protected override Relationship Create(Type objectType, JObject jObject)
         {

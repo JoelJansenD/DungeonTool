@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DungeonLib;
 using Newtonsoft.Json.Linq;
 
 namespace DungeonTool.Monsters
 {
-    class RelationshipGroupConverter : Converter<RelationshipGroup>
+    public class RelationshipGroupConverter : Converter<RelationshipGroup>
     {
         protected override RelationshipGroup Create(Type objectType, JObject jObject)
         {

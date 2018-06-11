@@ -1,4 +1,6 @@
-﻿using DungeonTool.Monsters.Modifiers;
+﻿using DungeonLib;
+using DungeonTool;
+using DungeonTool.Monsters.Modifiers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -154,12 +156,15 @@ namespace DungeonTool.Monsters
     {
         aberration,
         beast,
+        fiend,
         goonie,
         humanoid
     }
 
     public enum Subspecies
     {
+        demon,
+        devil,
         elf,
         goblinoid,
         human,
